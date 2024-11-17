@@ -15,7 +15,7 @@ class GameMap:
         # Define map layout: 'R' for road, 'O' for obstacle, 'G' for goal
         self.grid = [
             ['R', 'R', 'R', 'O', 'R', 'R', 'R', 'R', 'R', 'R', 'R', 'R', 'R', 'R', 'R', 'R'],
-            ['R', 'O', 'R', 'O', 'R', 'G', 'R', 'R', 'R', 'O', 'O', 'R', 'O', 'R', 'O', 'R'],
+            ['R', 'O', 'R', 'O', 'R', 'O', 'R', 'R', 'R', 'O', 'O', 'R', 'O', 'R', 'O', 'R'],
             ['R', 'R', 'R', 'R', 'R', 'R', 'R', 'O', 'R', 'R', 'R', 'R', 'R', 'O', 'R', 'R'],
             ['O', 'R', 'O', 'O', 'R', 'R', 'R', 'R', 'R', 'R', 'R', 'O', 'R', 'R', 'R', 'R'],
             ['R', 'R', 'R', 'R', 'O', 'R', 'R', 'R', 'R', 'R', 'O', 'O', 'R', 'O', 'O', 'R'],
@@ -36,6 +36,8 @@ class GameMap:
             (2, 2),  # Zombie 1 starting position
             (3, 3),  # Zombie 2 starting position
             (5, 8),  # Zombie 3 starting position
+            (8, 5),
+            (2, 8),
         ]
 
     @property
@@ -71,7 +73,7 @@ class GameMap:
                 elif cell_type == 'O':  # Obstacle
                     color = (100, 100, 100)  # Dark gray
                 elif cell_type == 'G':  # Goal
-                    color = (0, 255, 0)  # Green
+                    color = (0, 200, 0)  # Green
                 else:
                     color = (50, 50, 50)  # Default background
 

@@ -37,7 +37,7 @@ class Game:
         self.timer = GameTimer()
 
         # Turn-based system variables
-        self.player_moves = 2  # Player gets 2 moves per turn
+        self.player_moves = 1  # Player gets 1 moves per turn
         self.current_player_moves = 0
 
     def run(self):

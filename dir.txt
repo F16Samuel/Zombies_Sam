@@ -1,0 +1,45 @@
+Zombie-Apocalypse-Game/
+│
+├── assets/                # Game assets like images, sound, and fonts
+│   ├── images/            # Images for buildings, zombies, backgrounds, etc.
+│   ├── sounds/            # Sound files for background music, zombie sounds, etc.
+│   └── fonts/             # Fonts used in the game UI
+│
+├── src/                   # Game source code
+│   ├── main.py            # Main entry point of the game
+│   ├── game/              # Core game logic
+│   │   ├── game.py        # Game initialization, game loop, and state management
+│   │   ├── player.py      # Player movement and logic
+│   │   ├── zombie.py      # Zombie behavior and movement
+│   │   ├── map.py         # Map representation, generation, and grid management
+│   │   └── pathfinding.py # Pathfinding algorithms (BFS, DFS, A*, etc.)
+│   │
+│   ├── ui/                # User interface elements (menus, buttons, etc.)
+│   │   ├── ui_manager.py  # UI manager for handling menus, HUD, and events
+│   │   ├── button.py      # Button logic for menu and in-game interactions
+│   │   ├── textbox.py     # TextBox for user input, instructions
+│   │   └── hud.py         # Heads-up display for game info (score, health, etc.)
+│   │
+│   ├── utils/             # Utility functions and helper classes
+│   │   ├── timer.py       # Timer for tracking game time or zombie movement
+│   │   └── utils.py       # General utility functions (random number generation, etc.)
+│   │
+│   └── algorithms/        # Graph-related algorithms like BFS, DFS, etc.
+│       ├── bfs.py         # BFS algorithm implementation for pathfinding
+│       ├── dfs.py         # DFS algorithm implementation for exploration
+│       ├── dijkstra.py    # Dijkstra’s algorithm for shortest pathfinding
+│       └── a_star.py      # A* algorithm for optimal pathfinding
+│
+├── config/                # Configuration files for game settings, levels, etc.
+│   ├── settings.json      # Game settings (audio, difficulty, etc.)
+│   ├── levels.json        # Level data, layout of the city map, starting points, etc.
+│   └── zombies.json       # Initial positions of zombies and their types
+│
+├── docs/                   # Documentation for the game, including rules and dev notes
+│   ├── game_design.md      # Game design document, including features, mechanics, etc.
+│   ├── algorithms.md       # Explanation of algorithms used in the game (BFS, DFS, etc.)
+│   └── setup.md            # Instructions for setting up the development environment
+│
+├── build/                  # Build directory for compiled executables, object files, etc.
+│
+└── README.md               # Project overview, installation instructions, and game description
